@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../tabs/matrrial.page.dart';
 import 'sidemenu.service.dart';
 
 const containerRadius = Radius.circular(30.0);
@@ -129,6 +130,8 @@ class MainDrawer extends StatelessWidget {
                 )),
             leading: Icon(Icons.tab, color: theme.primaryColor),
             onTap: () async {
+              final navigator = Navigator.of(context);
+              navigator.push(MaterialPageRoute(builder: (BuildContext context) => const TabsPage()));
               drawerKey.currentState!.closeEndDrawer();
             },
           ),

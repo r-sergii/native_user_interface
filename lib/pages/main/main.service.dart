@@ -9,4 +9,10 @@ class MainService extends ChangeNotifier {
   final date = ValueNotifier<DateTime>(DateTime(2016, 10, 26));
   final time = ValueNotifier<DateTime>(DateTime(2016, 5, 10, 22, 35));
   final dateTime = ValueNotifier<DateTime>(DateTime(2016, 8, 3, 17, 45));
+
+  // final currentSliderValue = ValueNotifier<double>(20);
+  final currentDiscreteSliderValue = ValueNotifier<double>(60);
+  final year2023 = ValueNotifier<bool>(true);
+
+  final selectedDate = ValueNotifier<DateTime>(DateTime.now());
 }

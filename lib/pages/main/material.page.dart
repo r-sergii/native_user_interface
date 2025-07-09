@@ -21,7 +21,7 @@ class MainPage extends StatelessWidget {
           title: Text(title),
           actions: [
             IconButton(
-              icon: const Icon(Icons.table_chart_outlined),
+              icon: const Icon(Icons.tab),//table_chart_outlined),
               onPressed: () {
                 final navigator = Navigator.of(context);
                 navigator.push(MaterialPageRoute(builder: (BuildContext context) => const TabsPage()));
