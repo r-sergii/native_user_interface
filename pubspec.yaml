@@ -35,6 +35,17 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  # Cupertino part
+  # side_navigation: ^1.0.2
+  # side_navigation:
+  #   path:  packages/side_navigation-1.0.2
+  # flutter_side_menu: ^0.4.0
+  # flutter_side_menu:
+  #   path:  packages/flutter_side_menu-0.4.0
+
+  # Common part
+  provider: ^6.0.5
+  font_awesome_flutter: ^10.4.0
 
 dev_dependencies:
   flutter_test:
@@ -56,6 +67,7 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  ###############
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
