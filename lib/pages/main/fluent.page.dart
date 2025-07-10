@@ -14,8 +14,12 @@ import '/views/alertdialog/fluent.view.dart';
 import '/views/navigationbar/fluent.view.dart';
 import '/views/progressindicator/fluent.view.dart';
 import '/views/slider/fluent.view.dart';
+import '/views/scaffold/fluent.view.dart';
+import '/views/datepicker/fluent.view.dart';
+import '/views/listtile/fluent.view.dart';
+import '/views/tabs/fluent.view.dart';
 
-final viewKey = GlobalKey(debugLabel: 'Navigation View Key');
+// final viewKey = GlobalKey(debugLabel: 'Navigation View Key');
 
 class MainPage extends StatefulWidget {
   final String title;
@@ -137,7 +141,7 @@ class MainPageState extends State<MainPage> with WindowListener {
                 PaneItem(
                   icon: const Icon(FluentIcons.side_panel_mirrored),
                   title: const Text('Segmented Control (Tab Bar)'),
-                  body: const Text("Segmented Control (Tab Bar)"),
+                  body: const TabBarView(),
                 ),
                 PaneItem(
                   icon: const Icon(FluentIcons.progress_ring_dots),
@@ -147,17 +151,17 @@ class MainPageState extends State<MainPage> with WindowListener {
                 PaneItem(
                   icon: const Icon(FluentIcons.date_time),
                   title: const Text('Date Picker'),
-                  body: const Text("Date Picker"),
+                  body: const DatePickerView(),
                 ),
                 PaneItem(
                   icon: const Icon(FluentIcons.event),
                   title: const Text('Scaffold'),
-                  body: const Text("Scaffold"),
+                  body: const ScaffoldView(),
                 ),
                 PaneItem(
                   icon: const Icon(FluentIcons.contact_card),
                   title: const Text('ListTile'),
-                  body: const Text("ListTile"),
+                  body: const ListTileView(),
                 ),
               ],
             ),
