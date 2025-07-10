@@ -15,4 +15,6 @@ class MainService extends ChangeNotifier {
   final year2023 = ValueNotifier<bool>(true);
 
   final selectedDate = ValueNotifier<DateTime>(DateTime.now());
+
+  final checked = ValueNotifier<bool>(false);
 }
