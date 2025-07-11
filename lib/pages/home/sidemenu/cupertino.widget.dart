@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../tabs/cupertino.page.dart';
+import '../../tabs/cupertino.page.dart';
 import 'sidemenu.service.dart';
 
 class SideMenu extends StatelessWidget {

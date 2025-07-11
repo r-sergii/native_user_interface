@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
-import 'sidemenu.service.dart';
+import 'sidemenu/sidemenu.service.dart';
 import '../tabs/cupertino.page.dart';
-import 'sidemenu.widget.dart';
+import 'sidemenu/cupertino.widget.dart';
 
 import '/views/listtile/cupertino.view.dart';
 import '/views/datepicker/cupertino.view.dart';

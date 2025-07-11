@@ -13,7 +13,7 @@ import 'theme.fluent.dart';
 // import 'pages/main/cupertino.page.dart';
 import 'pages/home/fluent.page.dart';
 import 'pages/home/home.service.dart';
-import 'pages/home/sidemenu.service.dart';
+import 'pages/home/sidemenu/sidemenu.service.dart';
 
 // Fluent part
 /// Checks if the current environment is a desktop environment.
@@ -29,7 +29,6 @@ bool get isDesktop {
 //////
 ///
 void main() async {
-// Fluent part
   WidgetsFlutterBinding.ensureInitialized();
 
   // if it's not on the web, windows or android, load the accent color
@@ -57,7 +56,6 @@ void main() async {
     });
   }
 
-  /// end Fluent parh
   // runApp(const MyApp());
   runApp(
     MultiProvider(
@@ -107,7 +105,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       locale: appTheme.locale,
-      home: const MainPage(title: 'Fluent Widgets'),
+      home: const HomePage(title: 'Fluent Widgets'),
     );
   }
 }

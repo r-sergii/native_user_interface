@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'theme.fluent.dart';
 import 'pages/home/material.page.dart';
 import 'pages/home/home.service.dart';
-import 'pages/home/sidemenu.service.dart';
+import 'pages/home/sidemenu/sidemenu.service.dart';
 
 //////
 ///
@@ -15,7 +14,6 @@ void main() async {
       providers: [
         ChangeNotifierProvider(create: (context) => HomeService()),
         ChangeNotifierProvider(create: (context) => SideMenuService()),
-        ChangeNotifierProvider(create: (context) => AppTheme()),
       ],
       child: const MyApp(),
     ),

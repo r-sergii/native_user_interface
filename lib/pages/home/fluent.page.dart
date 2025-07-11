@@ -6,7 +6,7 @@ import 'package:window_manager/window_manager.dart';
 
 import '../../theme.fluent.dart';
 
-import 'sidemenu.service.dart';
+import 'sidemenu/sidemenu.service.dart';
 import '/views/button/fluent.view.dart';
 import '/views/switch/fluent.view.dart';
 import '/views/textfield/fluent.view.dart';
@@ -21,15 +21,15 @@ import '/views/tabs/fluent.view.dart';
 
 // final viewKey = GlobalKey(debugLabel: 'Navigation View Key');
 
-class MainPage extends StatefulWidget {
+class HomePage extends StatefulWidget {
   final String title;
-  const MainPage({super.key, required this.title});
+  const HomePage({super.key, required this.title});
 
   @override
-  MainPageState createState() => MainPageState();
+  HomePageState createState() => HomePageState();
 }
 
-class MainPageState extends State<MainPage> with WindowListener {
+class HomePageState extends State<HomePage> with WindowListener {
   @override
   void initState() {
     windowManager.addListener(this);

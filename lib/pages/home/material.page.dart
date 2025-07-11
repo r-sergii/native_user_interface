@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../tabs/matrrial.page.dart';
-import 'home.drawer.dart';
-import 'sidemenu.service.dart';
+import 'sidemenu/material.widget.dart';
+import 'sidemenu/sidemenu.service.dart';
 
 import '/views/listtile/material.view.dart';
 import '/views/datepicker/material.view.dart';
