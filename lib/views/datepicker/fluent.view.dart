@@ -1,14 +1,14 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:provider/provider.dart';
 
-import '../../pages/main/main.service.dart';
+import '../../pages/home/home.service.dart';
 
 class DatePickerView extends StatelessWidget {
   const DatePickerView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final state = Provider.of<MainService>(context, listen: false);
+    final state = Provider.of<HomeService>(context, listen: false);
 
     return Center(
       child: Column(

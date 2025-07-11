@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:window_manager/window_manager.dart';
 
-import '../../fluent.theme.dart';
+import '../../theme.fluent.dart';
 
 import 'sidemenu.service.dart';
 import '/views/button/fluent.view.dart';

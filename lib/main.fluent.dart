@@ -8,12 +8,12 @@ import 'package:flutter_acrylic/flutter_acrylic.dart' as flutter_acrylic;
 import 'package:system_theme/system_theme.dart';
 import 'package:window_manager/window_manager.dart';
 
-import 'fluent.theme.dart';
+import 'theme.fluent.dart';
 // import 'pages/main/material.page.dart';
 // import 'pages/main/cupertino.page.dart';
-import 'pages/main/fluent.page.dart';
-import 'pages/main/main.service.dart';
-import 'pages/main/sidemenu.service.dart';
+import 'pages/home/fluent.page.dart';
+import 'pages/home/home.service.dart';
+import 'pages/home/sidemenu.service.dart';
 
 // Fluent part
 /// Checks if the current environment is a desktop environment.
@@ -62,7 +62,7 @@ void main() async {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context) => MainService()),
+        ChangeNotifierProvider(create: (context) => HomeService()),
         ChangeNotifierProvider(create: (context) => SideMenuService()),
         ChangeNotifierProvider(create: (context) => AppTheme()),
       ],
@@ -85,24 +85,6 @@ class MyApp extends StatelessWidget {
     //     ChangeNotifierProvider(create: (context) => SideMenuService()),
     //     // ChangeNotifierProvider(create: (context) => AppTheme()),
     //   ],
-    // return
-    // child: MaterialApp(
-    //   title: appTitle,
-    //   theme: ThemeData(
-    //     colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-    //     useMaterial3: true,
-    //   ),
-    //   home: const MainPage(title: 'Material Widgets'),
-    // ),
-    // return
-    // child: const CupertinoApp(
-    //   title: appTitle,
-    //   theme: CupertinoThemeData(primaryColor: CupertinoColors.systemGrey, brightness: Brightness.light
-    //       // barBackgroundColor: CupertinoColors.white,
-    //       ),
-    //   home: MainPage(title: 'Cupertino Widgets'),
-    //   debugShowCheckedModeBanner: false,
-    // ),
     final appTheme = context.watch<AppTheme>();
     return FluentApp(
       title: appTitle,

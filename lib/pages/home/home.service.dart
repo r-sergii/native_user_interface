@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class MainService extends ChangeNotifier {
+class HomeService extends ChangeNotifier {
   final switchValue = ValueNotifier<bool>(true);
   final textController = TextEditingController(text: 'initial text');
   final currentSliderValue = ValueNotifier<double>(0.0);

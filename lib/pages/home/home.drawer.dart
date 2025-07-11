@@ -6,10 +6,10 @@ import 'sidemenu.service.dart';
 
 const containerRadius = Radius.circular(30.0);
 
-class MainDrawer extends StatelessWidget {
+class HomeDrawer extends StatelessWidget {
   final GlobalKey<ScaffoldState> drawerKey;
   final SideMenuService state;
-  const MainDrawer({Key? key, required this.drawerKey, required this.state}) : super(key: key);
+  const HomeDrawer({Key? key, required this.drawerKey, required this.state}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

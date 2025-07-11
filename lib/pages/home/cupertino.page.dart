@@ -6,9 +6,20 @@ import 'sidemenu.service.dart';
 import '../tabs/cupertino.page.dart';
 import 'sidemenu.widget.dart';
 
-class MainPage extends StatelessWidget {
+import '/views/listtile/cupertino.view.dart';
+import '/views/datepicker/cupertino.view.dart';
+import '/views/scaffold/cupertino.view.dart';
+import '/views/slider/cupertino.view.dart';
+import '/views/progressindicator/cupertino.view.dart';
+import '/views/alertdialog/cupertino.view.dart';
+import '/views/navigationbar/cupertino.view.dart';
+import '/views/textfield/cupertino.view.dart';
+import '/views/switch/cupertino.view.dart';
+import '/views/button/cupertino.view.dart';
+
+class HomePage extends StatelessWidget {
   final String title;
-  const MainPage({super.key, required this.title});
+  const HomePage({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -135,7 +146,7 @@ class MainPage extends StatelessWidget {
                   child: ValueListenableBuilder<int>(
                       valueListenable: state.selectedIndex,
                       builder: (_, mode, __) {
-                        return state.getView();
+                        return getView(state.selectedIndex.value);
                       })
                   //     child: Center(
                   //   child: Column(
@@ -153,5 +164,30 @@ class MainPage extends StatelessWidget {
         },
       ),
     );
+  }
+
+  getView(int index) {
+    switch (index) {
+      case 0:
+        return const ButtonView();
+      case 1:
+        return const SwitchView();
+      case 2:
+        return const TextFieldView();
+      case 3:
+        return const NavigationBarView();
+      case 4:
+        return const AlertDialogView();
+      case 5:
+        return const SliderView();
+      case 7:
+        return const ProgressIndicatorView();
+      case 8:
+        return const DatePickerView();
+      case 9:
+        return const ScaffoldView();
+      case 10:
+        return const ListTileView();
+    }
   }
 }

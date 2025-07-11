@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../pages/main/main.service.dart';
+import '../../pages/home/home.service.dart';
 
 class DatePickerView extends StatelessWidget {
   const DatePickerView({super.key});
 
   Future<void> _selectDate(BuildContext context) async {
-    final state = Provider.of<MainService>(context, listen: false);
+    final state = Provider.of<HomeService>(context, listen: false);
     final DateTime? pickedDate = await showDatePicker(
       context: context,
       initialDate: DateTime(2021, 7, 25),
@@ -20,7 +20,7 @@ class DatePickerView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final state = Provider.of<MainService>(context, listen: false);
+    final state = Provider.of<HomeService>(context, listen: false);
 
     return ValueListenableBuilder<DateTime>(
       valueListenable: state.selectedDate,
